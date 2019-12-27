@@ -108,7 +108,9 @@ class userController extends Controller
             return view('register');
         }
 
-        return view('login');
+        return view('login')->with([
+            'desicion' => false
+        ]);
     }
 
 }
